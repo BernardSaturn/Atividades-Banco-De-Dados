@@ -7,14 +7,14 @@ USE db_pizzaria_legaal;
 -- Criação da tabela tb_categorias
 CREATE TABLE tb_categorias (
     id_categoria INT PRIMARY KEY,
-    nome_categoria VARCHAR(50),
+    nome_categoria VARCHAR(255),
     descricao_categoria VARCHAR(255)
 );
 
 -- Criação da tabela tb_pizzas
 CREATE TABLE tb_pizzas (
     id_pizza INT PRIMARY KEY,
-    nome_pizza VARCHAR(50),
+    nome_pizza VARCHAR(255),
     descricao_pizza VARCHAR(255),
     valor DECIMAL(5,2),
     id_categoria INT,
